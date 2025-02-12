@@ -113,7 +113,7 @@ export const getNetworkConfig = (network: Network): NetworkUserConfig => ({
   ...getBaseNetworkConfig(network),
   url: rpcUrls[network],
   saveDeployments: true,
-  accounts: [MNEMONIC_DEV!],
+  accounts: [PK!],
 });
 
 export const getForkNetworkConfig = (
